@@ -54,6 +54,7 @@ The Code Below solves that issue, So use this one
 # No. of Sara training emails :  7884
 # Training Time: 0.024 s
 # Predicting Time: 0.364 s
-# 0.8953356086461889
+# 0.8953356086461889 for gamma = 'scale' (default)
+# 0.6160409556313993 for gamma = 'auto' 
 
 #########################################################
