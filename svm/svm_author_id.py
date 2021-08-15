@@ -27,7 +27,7 @@ from sklearn.svm import SVC
 features_train = features_train[:int(len(features_train)/100)]
 labels_train = labels_train[:int(len(labels_train)/100)]
 
-clf = SVC(kernel = 'rbf', gamma='auto')
+clf = SVC(kernel = 'rbf', gamma='auto', C=10000.0)
 
 t0 = time()
 clf.fit(features_train, labels_train)
@@ -56,5 +56,6 @@ The Code Below solves that issue, So use this one
 # Predicting Time: 0.364 s
 # 0.8953356086461889 for gamma = 'scale' (default)
 # 0.6160409556313993 for gamma = 'auto' 
+# accuracy for C = 10000 is 0.8924914675767918 (shows error)
 
 #########################################################
