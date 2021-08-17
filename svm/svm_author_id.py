@@ -24,8 +24,8 @@ features_train, features_test, labels_train, labels_test = preprocess()
 ### your code goes here ###
 from sklearn.svm import SVC
 
-features_train = features_train[:int(len(features_train)/100)]
-labels_train = labels_train[:int(len(labels_train)/100)]
+##features_train = features_train[:int(len(features_train)/100)]
+##labels_train = labels_train[:int(len(labels_train)/100)]
 
 clf = SVC(kernel = 'rbf', gamma='auto', C=10000.0)
 
@@ -42,6 +42,8 @@ from sklearn.metrics import accuracy_score
 acc = accuracy_score(pred, labels_test)
 print(acc)
 
+import numpy as np
+print(np.count_nonzero(pred == 1))
 #########################################################
 
 #########################################################
@@ -57,5 +59,7 @@ The Code Below solves that issue, So use this one
 # 0.8953356086461889 for gamma = 'scale' (default)
 # 0.6160409556313993 for gamma = 'auto' 
 # accuracy for C = 10000 is 0.8924914675767918 (shows error)
+# number of chris's emails = 877 (considering pred as a numpy n dimensional array, used the count_nonzero method)
+
 
 #########################################################
