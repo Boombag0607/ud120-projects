@@ -32,8 +32,9 @@ plt.show()
 ### visualization code (prettyPicture) to show you the decision boundary
 
 ## first algorithm used was k nearest neighbors
+## accuarcy for n_neighbors = 1 is 94%.
 # from sklearn.neighbors import KNeighborsClassifier
-# clf = KNeighborsClassifier()
+# clf = KNeighborsClassifier(n_neighbors =  1)
 # clf.fit(features_train, labels_train)
 # pred = clf.predict(features_test)
 
