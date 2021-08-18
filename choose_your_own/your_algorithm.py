@@ -38,9 +38,16 @@ plt.show()
 # clf.fit(features_train, labels_train)
 # pred = clf.predict(features_test)
 
-# from sklearn.metrics import accuracy_score
-# acc = accuracy_score(pred, labels_test)
-# print(acc)
+## second algorithm used --- AdaBoost
+## greatest accuracy for n_neighbours = 100 is 92.4%
+# from sklearn.ensemble import AdaBoostClassifier
+# clf = AdaBoostClassifier(n_estimators=500, random_state=0)
+# clf.fit(features_train, labels_train)
+# pred = clf.predict(features_test)
+
+from sklearn.metrics import accuracy_score
+acc = accuracy_score(pred, labels_test)
+print(acc)
 
 try:
     prettyPicture(clf, features_test, labels_test)
