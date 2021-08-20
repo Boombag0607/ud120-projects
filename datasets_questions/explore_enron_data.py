@@ -31,7 +31,7 @@ num = 0
 ## counting the total number of 'person of interest'
 enron_names = open('../final_project/poi_names.txt', 'r')
 for line in enron_names:
-    if '(y)' in line:
+    if '(y)' or '(n)' in line:
         num = num + 1
 
 print(num)
