@@ -22,16 +22,21 @@ enron_data = joblib.load(open("../final_project/final_project_dataset.pkl", "rb"
 #print(len(enron_data["SKILLING JEFFREY K"]))
 
 ## counting the number of 'person of interest' in the enron data
-num = 0
+# num = 0
 # for person in enron_data:
 #     if enron_data[person]['poi'] == 1:
 #         num = num + 1
 # print(num)
 
 ## counting the total number of 'person of interest'
-enron_names = open('../final_project/poi_names.txt', 'r')
-for line in enron_names:
-    if '(y)' or '(n)' in line:
-        num = num + 1
+# enron_names = open('../final_project/poi_names.txt', 'r')
+# for line in enron_names:
+#     if '(y)' or '(n)' in line:
+#         num = num + 1
 
-print(num)
+# print(num)
+
+## data from James Prentice
+## data from Colwell Wesley
+## data from Jeffrey K. Skillling
+# print(enron_data['SKILLING JEFFREY K'])
