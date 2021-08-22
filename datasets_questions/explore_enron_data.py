@@ -39,4 +39,21 @@ enron_data = joblib.load(open("../final_project/final_project_dataset.pkl", "rb"
 ## data from James Prentice
 ## data from Colwell Wesley
 ## data from Jeffrey K. Skillling
-# print(enron_data['SKILLING JEFFREY K'])
+# lst = list()
+# lst.append(enron_data['FASTOW ANDREW S']['total_payments'])
+# lst.append(enron_data['LAY KENNETH L']['total_payments'])
+# lst.append(enron_data['SKILLING JEFFREY K']['total_payments'])
+## print(enron_data)
+## print(max(lst))
+
+# num1 = 0
+# for person in enron_data:
+#     if (enron_data[person]['salary'] != 'NaN'):
+#         num1 += 1
+# print(num1)
+# num2 = 0
+# for person in enron_data:
+#     if (enron_data[person]['poi'] == 1):
+#         num2 += 1
+# print(num2)
+# print(len(enron_data))
